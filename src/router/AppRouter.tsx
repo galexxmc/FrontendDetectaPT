@@ -17,7 +17,7 @@ export const AppRouter = () => {
             <Route path="/pacientes" element={<ListaPacientes />} />
             {/* Redirección por defecto al entrar a la app */}
             <Route path="/" element={<Navigate to="/pacientes" replace />} />
-            <Route path="*" element={<Navigate to="/pacientes" replace />} />
+            <Route path="*" element={<Navigate to="/pacientes" replace />} />  
         </Route>
       </Routes>
     </BrowserRouter>

@@ -31,7 +31,7 @@ export interface RegisterRequest {
 export interface Paciente {
     id: number;           
     codigo: string;       
-    
+    direccion: string;
     nombres: string;
     apellidos: string;
     dni: string;
@@ -40,10 +40,8 @@ export interface Paciente {
     telefono: string;
     sexo: string;
     fechaNacimiento: string;
-    nombreSeguro?: string; 
-    historial?: {
-        codigoHistoria: string;
-    };
+    nombreSeguro?: string;
+    historiaClinica: string;
 }
 
 export interface PaginatedResponse<T> {
